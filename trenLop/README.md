@@ -1,0 +1,8 @@
+-   Props:
+    -   Là một object.
+    -   Được sử dụng để truyền dữ liệu từ component cha xuống component con.
+    -   Prop là bất biến.
+    - Bản chất giống như đối số/tham số
+-   State:
+    -   Dữ liệu nội bộ của component.
+    -   Khi cập nhật state thì component sẽ re-render.
