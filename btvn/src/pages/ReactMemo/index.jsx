@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { useCallback, useState } from "react";
+import { memo, useCallback, useState } from "react";
 
 /* Child Comp 1 */
-function ChildComp1({ value, onIncrease }) {
+const ChildComp1 = memo(({ value, onIncrease }) => {
     console.log(`ChildComp1: re-render`);
     return (
         <div className="p-4 border rounded-lg bg-blue-50">
@@ -12,10 +12,10 @@ function ChildComp1({ value, onIncrease }) {
             </Button>
         </div>
     );
-}
+});
 
 /* Child Comp 2 */
-function ChildComp2({ value, onIncrease }) {
+const ChildComp2 = memo(({ value, onIncrease }) => {
     console.log(`ChildComp2: re-render`);
     return (
         <div className="p-4 border rounded-lg bg-blue-50">
@@ -25,7 +25,7 @@ function ChildComp2({ value, onIncrease }) {
             </Button>
         </div>
     );
-}
+});
 
 function ReactMemo() {
     const [count1, setCount1] = useState(0);
