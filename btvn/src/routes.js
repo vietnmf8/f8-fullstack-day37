@@ -11,6 +11,7 @@ const routes = [
             { path: paths.editAvatar, component: EditAvatar },
             { path: paths.useRef, component: UseRef },
             { path: paths.reactMemo, component: ReactMemo },
+            { path: paths.home, component: ReactMemo },
         ],
     },
 ];
