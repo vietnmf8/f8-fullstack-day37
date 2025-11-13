@@ -1,8 +1,10 @@
+import Header from "@/components/Header";
 import { Outlet } from "react-router";
 
 function DefaultLayout() {
     return (
         <div>
+            <Header />
             <main
                 style={{
                     minHeight: "100vh",
